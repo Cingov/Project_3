@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>IS_218 Registration</title>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+<form action="registration.php" method="post">
+	
+	First Name: 
+	<input type="text" name="firstName">
+	<span class="error">* <?php echo $empty;?></span>
+	<br><br>
+	Last Name: 
+	<input type="text" name="lastName">
+	<span class="error">* <?php echo $empty;?></span>
+	<br><br>
+	Birthday: 
+	<input type="text" name="birthday">
+	<span class="error">* <?php echo $empty;?></span>
+	<br><br>
+	Email: 
+	<input type="text" name="email">
+	<span class="error">* <?php echo $empty;?></span>
+	<br><br>
+	Password (at least 8 characters): 
+	<input type="password" name="password">
+	<span class="error">* <?php echo $empty;?></span>
+	<br><br>
+	<input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

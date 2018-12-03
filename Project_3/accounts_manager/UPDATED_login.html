@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>IS_218 Login</title>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<style>
+input[type=text], select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+div {
+	border-radius: 5px;
+	background-color: white;
+	padding: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+email {
+	style: font-size:30px;
+}
+</style>
+
+<body id="LoginForm">
+	<div>
+		<form action="login.php" method="post">
+	
+			<label for="email">Email Adress: </label>
+			<input type="text" id="email" name="email">
+			<span class="error">* <?php echo $error;?></span>
+			<br><br>
+		
+			<label for="password">Password (at least 8 characters):</label>  
+			<input type="text" id = "email" name="password">
+			<span class="error">* <?php echo $error;?></span>
+			<br><br>
+		
+			<button type="submit"> Submit</button>
+		
+		</form>
+	</div>
+</body>
+
